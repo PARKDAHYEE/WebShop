@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Shop Page</title>
+    <style>
+        #shop {
+            width: 1100px;
+            margin: 0 auto;
+            background-color: blanchedalmond;
+        }
+        header {
+            width: 100%;
+            height: 150px;
+            background-image: url(apple.jpeg);
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        header a {
+            float: left;
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+            width: 50%;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            padding: 10px 0;
+        }
+        nav ul li{
+            display: inline;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 5px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        nav li a:hover{
+            text-decoration: underline;
+        }
+        section {
+            float: left;
+            width: 580;
+            padding: 5px;
+        }
+        section article {
+            float: left;
+            width: 250px;
+            height: auto;
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid red
+        }
+        #left{
+            float: left;
+            width: 130px;
+            height: auto;
+            margin-top: 1%;
+           
+        }
+        #left ul {
+            list-style-type: none;
+        }
+        #left ul li{
+            font-weight: bolder;
+            background-color: black;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        #left ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        #right {
+            float: right;
+        }
+        footer {
+            clear: both;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        aside#left {
+            width: 200px;
+            height: 500px;
+        }
+
+        aside#left ul {
+            padding: 0px;
+        }
+        aside#left ul li:hover {
+            background-color: palevioletred;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="shop">
+        <header>
+            <br>
+            <br>
+            <a href="#">Webshop</a>
+        </header>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">MY ACCOUNT</a></li>
+                    <li><a href="#">CONTANTS</a></li>
+                </ul>
+            </nav>
+            <aside id="left">
+                <h2>카테고리</h2>
+                  <ul>
+                    <li><a href="#">컴퓨터</a></li> 
+                    <li><a href="#">의류</a></li>
+                    <li><a href="#">음악</a></li> 
+                    <li><a href="#">영화</a></li> 
+                    <li><a href="#">스포츠/레저</a></li> 
+                    <li><a href="#">가구/인테리어</a></li> 
+                    <li><a href="#">식품</a></li>
+                  </ul>
+            </aside>
+        <section>
+            <article class="a1">
+                <img src="computer d.jpg" width="200" height="auto"> <br>
+                <p>심플하고 슬림한 본체에 코어i5 3470과지포스 GT630을 장착 CPU:인텔 코어i5 3470(아이비 브릿지 3세대) 사용 <br>가격: 1,200,000원 </p> <br>
+                <input type="submit" value="쇼핑카드에 추가하기">
+            </article>
+            <article class="a2">
+                <img src="pngtree-computer.jpg" width="200" height="auto"> <br>
+                <p>Full-HD로 선명한 화면, ISP 패널로 시야각도 좋다! CPU: 인텔 코어i7 3630 QM, CPU: 인털코어i7 3630 QM <br>가격 1,200,000원</p> <br>
+                <input type="submit" value="쇼핑카드에 추가하기">
+            </article>
+        </section>
+        <aside id="right">
+            <h3>Shopping Cart</h3>
+            <p>현재 쇼핑카트에 물품이 없습니다.</p>
+            <a href="#">쇼핑카트 보기</a> <br>
+            <h3>Log In</h3>
+                <ul>
+                    <li>
+                         <label for="uname"class="tit">아이디</label> <br>
+                         <input type="text" id="uname" required>
+                    </li>
+                    <li>
+                        <label for="uname"class="tit">패스워드</label> <br>
+                        <input type="text" id="uname" required>
+                   </li>
+               </ul>
+               <input type="submit" value="로그인">
+               <input type="reset" value="초기화"> <br>
+            
+            <a href="#">회원가입</a>
+            <a href="#">비밀번호 분실</a>
+
+        </aside>
+        <footer><p>Copyright (c) 2023 Web Shop</p></footer> <br>
+
+    </div>
+</body>
+</html>
